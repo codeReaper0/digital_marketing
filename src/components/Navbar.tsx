@@ -80,17 +80,17 @@ const Navbar: React.FC = () => {
           >
             <span
               className={`w-6 h-0.5 transition-all duration-300 ${
-                isScrolled ? "bg-gray-900" : "bg-white"
+                isScrolled ? "bg-gray-900" : "bg-gray-800"
               } ${isMenuOpen ? "rotate-45 translate-y-2" : ""}`}
             ></span>
             <span
               className={`w-6 h-0.5 transition-all duration-300 ${
-                isScrolled ? "bg-gray-900" : "bg-white"
+                isScrolled ? "bg-gray-900" : "bg-gray-800"
               } ${isMenuOpen ? "opacity-0" : "opacity-100"}`}
             ></span>
             <span
               className={`w-6 h-0.5 transition-all duration-300 ${
-                isScrolled ? "bg-gray-900" : "bg-white"
+                isScrolled ? "bg-gray-900" : "bg-gray-800"
               } ${isMenuOpen ? "-rotate-45 -translate-y-2" : ""}`}
             ></span>
           </button>
@@ -109,7 +109,7 @@ const Navbar: React.FC = () => {
                 to={link.path}
                 className={`block font-medium py-3 px-4 rounded-xl transition-all duration-300 ${
                   location.pathname === link.path
-                    ? "bg-blue-600 text-gray-800 shadow-lg"
+                    ? "bg-gray-600 text-white shadow-lg"
                     : "text-gray-700 hover:bg-gray-100"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
