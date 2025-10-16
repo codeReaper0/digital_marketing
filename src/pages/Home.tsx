@@ -47,27 +47,16 @@ const Home: React.FC = () => {
   ];
 
   return (
-    <div className="pt-16">
+    <div className="pt-20">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-100/50 via-blue-50/50 to-blue-100/50"></div>
 
         {/* Animated Background Elements */}
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl animate-float"></div>
-          <div
-            className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-400/20 rounded-full blur-3xl animate-float"
-            style={{animationDelay: "2s"}}
-          ></div>
-          <div
-            className="absolute top-1/2 left-1/2 w-64 h-64 bg-cyan-400/20 rounded-full blur-3xl animate-float"
-            style={{animationDelay: "4s"}}
-          ></div>
-        </div>
 
         <div className="container-custom relative z-10">
-          <div className="text-center text-white">
+          <div className="text-center text-gray-800">
             <div className="animate-slide-up">
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight text-balance">
                 Transform Your
@@ -75,7 +64,7 @@ const Home: React.FC = () => {
                   Digital Presence
                 </span>
               </h1>
-              <p className="text-xl md:text-2xl lg:text-3xl mb-8 text-blue-100 max-w-4xl mx-auto leading-relaxed text-balance">
+              <p className="text-xl md:text-2xl  mb-8 text-gray-800 max-w-4xl mx-auto leading-relaxed text-balance">
                 Expert digital marketing solutions to grow your business and
                 dominate your market. Data-driven strategies that deliver real
                 results.
@@ -92,7 +81,7 @@ const Home: React.FC = () => {
                 </Link>
                 <Link
                   to="/book-consultation"
-                  className="btn bg-white/10 text-white backdrop-blur-sm border border-white/20 hover:bg-white/20 text-lg px-8 py-4"
+                  className="btn bg-white/10 text-gray-800 backdrop-blur-sm border border-gray-800  text-lg px-8 py-4"
                 >
                   Free Consultation
                 </Link>
@@ -114,9 +103,9 @@ const Home: React.FC = () => {
         <div className="container-custom">
           <div className="text-center mb-16 animate-slide-up">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 text-balance">
-              Our <span className="gradient-text">Services</span>
+              Our Services
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto text-balance">
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto text-balance">
               Comprehensive digital marketing solutions tailored to your
               business needs and goals.
             </p>
@@ -130,7 +119,7 @@ const Home: React.FC = () => {
                 style={{animationDelay: `${index * 0.1}s`}}
               >
                 <div
-                  className={`w-16 h-16 bg-gradient-to-r ${service.gradient} rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300`}
+                  className={`w-16 h-16  bg-white border border-gray-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300`}
                 >
                   {service.icon}
                 </div>
@@ -183,7 +172,7 @@ const Home: React.FC = () => {
                 className="text-center group"
                 style={{animationDelay: `${index * 0.1}s`}}
               >
-                <div className="text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-3 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-3 group-hover:scale-110 transition-transform duration-300">
                   {stat.number}
                 </div>
                 <div className="text-lg font-semibold text-gray-700">
@@ -196,7 +185,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative section-padding bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 text-white overflow-hidden">
+      <section className="relative section-padding bg-gray-800 text-white overflow-hidden">
         <div className="container-custom relative z-10 text-center">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance">
             Ready to Grow Your Business?
@@ -208,13 +197,13 @@ const Home: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/book-campaign"
-              className="btn bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-4 backdrop-blur-sm"
+              className="btn bg-white text-gray-800 hover:bg-gray-100 text-lg px-8 py-4 backdrop-blur-sm"
             >
               Start Your Campaign
             </Link>
             <Link
               to="/book-consultation"
-              className="btn border-2 border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-4 backdrop-blur-sm"
+              className="btn border-2 border-white text-white hover:bg-white hover:text-gray-800 text-lg px-8 py-4 backdrop-blur-sm"
             >
               Free Strategy Session
             </Link>

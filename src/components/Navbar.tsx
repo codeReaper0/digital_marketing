@@ -26,24 +26,21 @@ const Navbar: React.FC = () => {
     <nav
       className={`fixed w-full top-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-white/90 backdrop-blur-xl shadow-lg py-2"
-          : "bg-transparent py-4"
+          ? "bg-white/90 backdrop-blur-xl shadow-lg py-4"
+          : "bg-transparent py-6"
       }`}
     >
       <div className="container-custom">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-              <span className="text-white font-bold text-xl">DP</span>
-            </div>
             <div>
               <span
                 className={`text-2xl font-bold transition-colors duration-300 ${
-                  isScrolled ? "text-gray-900" : "text-white"
+                  isScrolled ? "text-gray-900" : "text-gray-800"
                 }`}
               >
-                DigitalPro
+                Logo
               </span>
             </div>
           </Link>
@@ -56,33 +53,22 @@ const Navbar: React.FC = () => {
                 to={link.path}
                 className={`font-medium transition-all duration-300 relative ${
                   location.pathname === link.path
-                    ? "text-blue-600"
+                    ? "text-gray-80"
                     : isScrolled
-                    ? "text-gray-700 hover:text-blue-600"
-                    : "text-white/90 hover:text-white"
+                    ? "text-gray-600 hover:text-gray-800"
+                    : "text-gray-600 hover:text-gray-800"
                 }`}
               >
                 {link.name}
                 {location.pathname === link.path && (
-                  <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-blue-600 rounded-full"></span>
+                  <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-gray-800 rounded-full"></span>
                 )}
               </Link>
             ))}
           </div>
 
           {/* CTA Button - Desktop */}
-          <div className="hidden lg:block">
-            <Link
-              to="/book-consultation"
-              className={`btn ${
-                isScrolled
-                  ? "btn-primary"
-                  : "bg-white text-blue-600 hover:bg-gray-100"
-              }`}
-            >
-              Get Started
-            </Link>
-          </div>
+          <div className="hidden lg:block"></div>
 
           {/* Mobile Menu Button */}
           <button
@@ -123,7 +109,7 @@ const Navbar: React.FC = () => {
                 to={link.path}
                 className={`block font-medium py-3 px-4 rounded-xl transition-all duration-300 ${
                   location.pathname === link.path
-                    ? "bg-blue-600 text-white shadow-lg"
+                    ? "bg-blue-600 text-gray-800 shadow-lg"
                     : "text-gray-700 hover:bg-gray-100"
                 }`}
                 onClick={() => setIsMenuOpen(false)}

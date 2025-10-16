@@ -1,13 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import "tailwindcss";
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    font-family: "Inter", system-ui, -apple-system, sans-serif;
-  }
+* {
+  font-family: "Open Sans", sans-serif;
 }
 
 @layer components {
@@ -16,7 +11,7 @@
   }
 
   .btn-primary {
-    @apply bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg hover:shadow-xl hover:scale-105;
+    @apply bg-gray-800 text-white shadow-lg hover:shadow-xl hover:scale-105;
   }
 
   .btn-secondary {
@@ -24,7 +19,7 @@
   }
 
   .btn-outline {
-    @apply border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white shadow-lg hover:shadow-xl;
+    @apply border-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white shadow-lg hover:shadow-xl;
   }
 
   .section-padding {
@@ -48,4 +43,8 @@
   .text-balance {
     text-wrap: balance;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }

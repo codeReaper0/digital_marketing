@@ -106,7 +106,7 @@ const CampaignBooking: React.FC = () => {
   return (
     <div className="pt-20">
       {/* Header */}
-      <div className="relative bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white py-28 overflow-hidden">
+      <div className="relative bg-gray-800 text-white py-28 overflow-hidden">
         <div className="container-custom relative z-10 text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-balance">
             Book Your Campaign
@@ -134,8 +134,8 @@ const CampaignBooking: React.FC = () => {
                       key={service.value}
                       className={`p-4 border-2 rounded-xl cursor-pointer transition-all duration-300 ${
                         selectedService === service.value
-                          ? "border-blue-500 bg-blue-50 shadow-lg"
-                          : "border-gray-200 hover:border-blue-300 hover:bg-gray-50"
+                          ? "border-gray-500 bg-gray-50 shadow-lg"
+                          : "border-gray-200 hover:border-gray-300 hover:bg-gray-50"
                       }`}
                       onClick={() => handleServiceSelect(service.value)}
                     >
@@ -145,14 +145,14 @@ const CampaignBooking: React.FC = () => {
                           <h4 className="font-semibold text-gray-900">
                             {service.label}
                           </h4>
-                          <p className="text-blue-600 font-medium">
+                          <p className="text-gray-600 font-medium">
                             {service.price}
                           </p>
                         </div>
                         <div
                           className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
                             selectedService === service.value
-                              ? "border-blue-500 bg-blue-500"
+                              ? "border-gray-500 bg-gray-500"
                               : "border-gray-300"
                           }`}
                         >

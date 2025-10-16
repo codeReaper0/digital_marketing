@@ -68,7 +68,7 @@ const BookConsultation: React.FC = () => {
   return (
     <div className="pt-20">
       {/* Header */}
-      <div className="relative bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white py-28 overflow-hidden">
+      <div className="relative bg-gray-800 text-white py-28 overflow-hidden">
         <div className="container-custom relative z-10 text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-balance">
             Book a Consultation
@@ -98,11 +98,11 @@ const BookConsultation: React.FC = () => {
                     className="rounded-2xl border-0 shadow-inner bg-white p-6 w-full"
                   />
                 </div>
-                <div className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl border border-blue-100">
-                  <h4 className="font-semibold text-blue-900 mb-2">
+                <div className="mt-6 p-4 bg-white rounded-xl border border-gray-600">
+                  <h4 className="font-semibold text-gray-800 mb-2">
                     Selected Date:
                   </h4>
-                  <p className="text-blue-700 font-medium">
+                  <p className="text-gray-800 font-medium">
                     {selectedDate.toLocaleDateString("en-US", {
                       weekday: "long",
                       year: "numeric",

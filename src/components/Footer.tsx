@@ -14,30 +14,13 @@ const Footer: React.FC = () => {
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold">D</span>
               </div>
-              <span className="text-xl font-bold">DigitalPro</span>
+              <span className="text-xl font-bold">Logo</span>
             </Link>
             <p className="text-gray-400 mb-4 max-w-md">
               Transforming businesses through innovative digital marketing
               strategies. We help brands grow and dominate their markets with
               data-driven approaches.
             </p>
-            <div className="flex space-x-4">
-              {["Facebook", "Twitter", "LinkedIn", "Instagram"].map(
-                (social) => (
-                  <a
-                    key={social}
-                    href="#"
-                    className="text-gray-400 hover:text-white transition-colors duration-300"
-                    aria-label={social}
-                  >
-                    <span className="sr-only">{social}</span>
-                    <div className="w-6 h-6 bg-gray-600 rounded-full flex items-center justify-center">
-                      {social.charAt(0)}
-                    </div>
-                  </a>
-                )
-              )}
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -69,7 +52,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <div className="space-y-2 text-gray-400">
-              <p>Email: info@digitalpro.com</p>
+              <p>Email: info@company.com</p>
               <p>Phone: +1 (555) 123-4567</p>
               <p>Address: 123 Marketing St, Digital City</p>
             </div>

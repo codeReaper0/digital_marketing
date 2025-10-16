@@ -117,7 +117,7 @@ const Services: React.FC = () => {
   return (
     <div className="pt-20">
       {/* Header */}
-      <div className="relative bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white py-28 overflow-hidden">
+      <div className="relative bg-gray-800 text-white py-28 overflow-hidden">
         <div className="container-custom relative z-10 text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-balance">
             Our Services
@@ -137,19 +137,19 @@ const Services: React.FC = () => {
               <div
                 key={service.id}
                 className={`group card overflow-hidden hover:scale-105 ${
-                  service.popular ? "ring-2 ring-purple-500 shadow-2xl" : ""
+                  service.popular ? "ring-2 ring-gray-800 shadow-2xl" : ""
                 }`}
                 style={{animationDelay: `${index * 0.1}s`}}
               >
                 {service.popular && (
-                  <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white text-center py-3 text-sm font-semibold">
+                  <div className="bg-gray-800 text-white text-center py-3 text-sm font-semibold">
                     ⭐ Most Popular
                   </div>
                 )}
                 <div className="p-8">
                   <div className="flex items-start justify-between mb-6">
                     <div
-                      className={`w-14 h-14 bg-gradient-to-r ${service.gradient} rounded-2xl flex items-center justify-center text-2xl shadow-lg`}
+                      className={`w-14 h-14 bg-white border border-gray-800 rounded-2xl flex items-center justify-center text-2xl shadow-lg`}
                     >
                       {service.icon}
                     </div>
@@ -198,7 +198,7 @@ const Services: React.FC = () => {
                   </div>
 
                   <div className="flex items-center justify-between mt-8 pt-6 border-t border-gray-100">
-                    <div className="text-3xl font-bold gradient-text">
+                    <div className="text-3xl font-bold text-gray-800">
                       {service.price}
                     </div>
                     <Link
@@ -216,8 +216,8 @@ const Services: React.FC = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="relative bg-gradient-to-r from-gray-900 to-blue-900 text-white overflow-hidden">
-        <div className="container-custom relative z-10">
+      <div className="relative  bg-gray-800 text-white overflow-hidden">
+        <div className="container-custom relative z-10 text-center">
           <div className="text-center py-28">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance">
               Ready to Transform Your Business?
