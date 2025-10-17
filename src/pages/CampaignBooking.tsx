@@ -23,35 +23,35 @@ const CampaignBooking: React.FC = () => {
   });
 
   const services: ServiceOption[] = [
-    {value: "seo", label: "SEO Optimization", price: "$999/mo", icon: "🔍"},
+    {value: "seo", label: "SEO Optimization", price: "₦999/mo", icon: "🔍"},
     {
       value: "social",
       label: "Social Media Marketing",
-      price: "$799/mo",
+      price: "₦799/mo",
       icon: "📱",
     },
-    {value: "ppc", label: "PPC Advertising", price: "$1,299/mo", icon: "🎯"},
+    {value: "ppc", label: "PPC Advertising", price: "₦1,299/mo", icon: "🎯"},
     {
       value: "content",
       label: "Content Marketing",
-      price: "$1,499/mo",
+      price: "₦1,499/mo",
       icon: "✍️",
     },
-    {value: "email", label: "Email Marketing", price: "$599/mo", icon: "📧"},
+    {value: "email", label: "Email Marketing", price: "₦599/mo", icon: "📧"},
     {
       value: "web-design",
       label: "Web Design & Development",
-      price: "$2,999",
+      price: "₦2,999",
       icon: "💻",
     },
   ];
 
   const budgets: string[] = [
-    "Less than $1,000",
-    "$1,000 - $5,000",
-    "$5,000 - $10,000",
-    "$10,000 - $25,000",
-    "$25,000+",
+    "Less than ₦1,000",
+    "₦1,000 - ₦5,000",
+    "₦5,000 - ₦10,000",
+    "₦10,000 - ₦25,000",
+    "₦25,000+",
   ];
 
   const timelines: string[] = [

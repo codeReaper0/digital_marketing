@@ -9,7 +9,7 @@ const Services: React.FC = () => {
       title: "SEO Optimization",
       description:
         "Improve your search engine rankings and drive organic traffic to your website with our comprehensive SEO strategies.",
-      price: "$999/mo",
+      price: "₦999/mo",
       features: [
         "Keyword Research & Analysis",
         "On-page Optimization",
@@ -27,7 +27,7 @@ const Services: React.FC = () => {
       title: "Social Media Marketing",
       description:
         "Engage your audience across all social platforms with compelling content and strategic campaigns.",
-      price: "$799/mo",
+      price: "₦799/mo",
       features: [
         "Content Creation & Curation",
         "Community Management",
@@ -45,7 +45,7 @@ const Services: React.FC = () => {
       title: "PPC Advertising",
       description:
         "Drive immediate results with targeted pay-per-click advertising campaigns across search and social platforms.",
-      price: "$1,299/mo",
+      price: "₦1,299/mo",
       features: [
         "Campaign Strategy & Setup",
         "Ad Creation & Optimization",
@@ -63,7 +63,7 @@ const Services: React.FC = () => {
       title: "Content Marketing",
       description:
         "Create valuable content that attracts, engages, and converts your target audience.",
-      price: "$1,499/mo",
+      price: "₦1,499/mo",
       features: [
         "Content Strategy Development",
         "Blog Writing & Optimization",
@@ -81,7 +81,7 @@ const Services: React.FC = () => {
       title: "Email Marketing",
       description:
         "Nurture leads and build customer relationships through targeted email campaigns and automation.",
-      price: "$599/mo",
+      price: "₦599/mo",
       features: [
         "Email Strategy Development",
         "List Building & Segmentation",
@@ -99,7 +99,7 @@ const Services: React.FC = () => {
       title: "Web Design & Development",
       description:
         "Create stunning, conversion-optimized websites that drive business growth and user engagement.",
-      price: "$2,999",
+      price: "₦2,999",
       features: [
         "UI/UX Design",
         "Responsive Development",
