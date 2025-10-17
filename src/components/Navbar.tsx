@@ -27,21 +27,15 @@ const Navbar: React.FC = () => {
       className={`fixed w-full top-0 z-50 transition-all duration-500 ${
         isScrolled
           ? "bg-white/90 backdrop-blur-xl shadow-lg py-4"
-          : "bg-transparent py-6"
+          : "bg-transparent py-2"
       }`}
     >
       <div className="container-custom">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 group">
+          <Link to="/" className="flex items-center  group">
             <div>
-              <span
-                className={`text-2xl font-bold transition-colors duration-300 ${
-                  isScrolled ? "text-gray-900" : "text-gray-800"
-                }`}
-              >
-                Logo
-              </span>
+              <img src="logo.png" alt="" className="w-16" />
             </div>
           </Link>
 

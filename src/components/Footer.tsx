@@ -10,11 +10,8 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 py-12">
           {/* Company Info */}
           <div className="md:col-span-2">
-            <Link to="/" className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">D</span>
-              </div>
-              <span className="text-xl font-bold">Logo</span>
+            <Link to="/" className="flex items-center  mb-4">
+              <img src="logo_white.png" alt="" className="w-16 " />
             </Link>
             <p className="text-gray-400 mb-4 max-w-md">
               Transforming businesses through innovative digital marketing
@@ -52,9 +49,10 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <div className="space-y-2 text-gray-400">
-              <p>Email: info@company.com</p>
-              <p>Phone: +1 (555) 123-4567</p>
-              <p>Address: 123 Marketing St, Digital City</p>
+              <a href="mailto:doubleultimatee@gmail.com">
+                Email: doubleultimatee@gmail.com
+              </a>
+              <p>Address: 21 Ifesowapo Street, Promiseland, Ayobo, Lagos</p>
             </div>
           </div>
         </div>
@@ -63,7 +61,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              &copy; {currentYear} DigitalPro. All rights reserved.
+              &copy; {currentYear} Double Ultimate. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a
